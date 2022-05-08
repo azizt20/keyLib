@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background_theme"
+    tools:context=".screens.Settings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        tools:ignore="MissingConstraints">
+
+        <Switch
+            android:id="@+id/appPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/items_background"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="@string/application_code"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/biometrical_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/items_background"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="@string/biometric_access"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/account_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/items_background"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="@string/account_settings"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/secret_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/items_background"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="@string/secret_key"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/lang_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/items_background"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="@string/language"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

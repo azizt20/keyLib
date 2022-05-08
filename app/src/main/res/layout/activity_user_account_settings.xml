@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/activity_background_theme"
+    android:orientation="vertical"
+    tools:context=".screens.UserAccountSettings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="40dp"
+        android:text="@string/account_settings"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="40dp"
+        android:text="@string/here_you_can_change_your_email_and_or_password"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_input_theme"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_text_color"
+        android:textSize="25sp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input_theme"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_text_color"
+        android:textSize="25sp"
+        tools:ignore="TextFields" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_email_password_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_input_theme"
+        android:elevation="10dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/text_green"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input_theme"
+        android:elevation="10dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/log_out"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_orange"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input_theme"
+        android:elevation="10dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/delete_account"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
